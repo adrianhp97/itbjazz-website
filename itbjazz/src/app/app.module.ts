@@ -7,6 +7,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
 import { NavigatorComponent } from './component/navigator/navigator.component';
 import { MainPageComponent } from './component/main-page/main-page.component';
+import { HistoryComponent } from './component/history/history.component';
+import { EventComponent } from './component/event/event.component';
+import { GalleryComponent } from './component/gallery/gallery.component';
+import { ContactComponent } from './component/contact/contact.component';
 
 
 @NgModule({
@@ -14,7 +18,11 @@ import { MainPageComponent } from './component/main-page/main-page.component';
     AppComponent,
     HomeComponent,
     NavigatorComponent,
-    MainPageComponent
+    MainPageComponent,
+    HistoryComponent,
+    EventComponent,
+    GalleryComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
