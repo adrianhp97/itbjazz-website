@@ -1,0 +1,55 @@
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 50px;
+}
+
+.nav {
+    opacity: 0.6;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+span {
+    width: 120px;
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+li:before {
+    content: "";
+    height: 3px;
+    width: 130px;
+    border-radius: 5px;
+    visibility: hidden;
+    position: absolute;
+    transform: scaleX(0);
+    background: #456D91;
+    transition: .25s linear;
+    bottom: 0;
+}
+li:hover:before,
+li:focus:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
